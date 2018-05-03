@@ -1,0 +1,1281 @@
+.hdr {
+    position: fixed; /* Stay in place */
+	width: 100%;
+    /*margin-left: 13%;*/
+    height: 4em;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding: 0;
+    background-color: #067A1D;
+    z-index: 1;  /*Stay on top */
+    border-bottom: solid 1px;
+}
+
+.hdr h1 {
+    height: 1.5em;
+    width: 100%;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    margin: 0;
+    font-size: 1.5em;
+    position:absolute;
+    color: white;
+    display: inline;
+    text-align: center;
+}
+
+.hdr img {
+    height: 3em;
+    padding-left: 1em;
+    width: auto;
+    margin: 0;
+    padding-top: .5em;
+    display: inline;
+}
+
+.search_container {
+    height: 1.5em;
+    padding-top: .5em;
+    padding-left: .5em;
+    margin-top: 0;
+    /*margin-left: 13%;*/
+    padding-bottom: .5em;
+    margin-bottom: 0;
+    font-size: 1.5em;
+    position: absolute;
+    top: 0;
+    /*left: 0;*/
+    display: inline;
+    padding-right: 1em;
+    z-index: 1;
+}
+
+.search_container form {
+    height: 100%;
+    display: inline-block;
+}
+
+.top_forms {
+    height: 1.5em;
+    padding-top: .5em;
+    margin-top: 0;
+    padding-bottom: .5em;
+    margin-bottom: 0;
+    font-size: 1.5em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline;
+    padding-right: 1em;
+    z-index: 1;
+}
+
+.top_forms form {
+    height: 100%;
+    display: inline-block;
+}
+
+.search_select {
+    width: 10em;
+    overflow: hidden;
+    background: white;
+    box-sizing: border-box;
+}
+
+#profile {
+    background-color: Transparent;
+}
+
+body {
+    font-family: Sans-Serif;
+    margin: 0;
+    padding: 0;
+    background: #e2e2de;
+}
+
+#foot {
+    position: fixed; /* Stay in place */
+    /*position: absolute;*/
+    left: 0;
+    bottom: 0;
+    /*height: 1em;*/
+    width: 85.5%;
+    margin-left: 14.5%;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-top: 0;
+    text-align: center;
+    z-index: 0;  /*Stay on top */
+    background-color: #e2e2de;
+    border-left: solid 1px;
+    border-top: solid 1px;
+    color: black;
+}
+
+/*Left Navigation Pane*/
+.leftNav {
+    display: block;
+	height: 100%; /* 100% Full-height */
+	width: 13%; /* 13% width of page */
+	position: fixed; /* Stay in place */
+	z-index: 1;  /*Stay on top */
+	top: 0; /*place in top left corner*/
+	left: 0;
+	background-color: #33703d; /* Spartan Green */
+	overflow-x: hidden; /* Disable horizontal scroll */
+    /*padding-top: 3em;*/
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 4em;
+	border-right: solid 1px;
+    border-top: solid 1px;
+}
+
+/*
+.leftNav h1 {
+    padding-top: 1em;
+    margin: 0;
+	color: White;
+	padding-left: 12%;
+	font-size: 2em;
+}
+*/
+
+.leftNav ul {
+	list-style-type: None;
+    width:100%;
+	padding-left: 0%;
+    margin-top: 0;
+}
+
+.leftNav ul li {
+	width:100%;
+	padding-left: 0%;
+    border-bottom: solid gray 1px;
+    height: 2em;
+    display: table;
+}
+
+.leftNav a {
+	/*display: inline-block;*/
+    display: table-cell;
+	color: White;
+	text-decoration: None;
+	width: 100%;
+    height: 100%;
+    padding-left: 12%;
+    vertical-align: middle;
+}
+
+.leftNav ul a:hover {
+	background-color: #d4f2cd;
+    color: black;
+}
+
+#expand_nav {
+    display: block;
+    height: 100%; /* 100% Full-height */
+	width: 1.5%;
+	position: fixed; /* Stay in place */
+	z-index: 1;  /*Stay on top */
+	top: 0; 
+	left: 13%;
+	background-color: #bcbcba; /* Spartan Green */
+	overflow-x: hidden; /* Disable horizontal scroll */
+    /*padding-top: 3em;*/
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 4em;
+	border-right: solid 1px;
+    border-left: solid 1px;
+    border-top: solid 1px;
+}
+
+#expand_nav:hover {
+    cursor: pointer;
+    background-color: #d4f2cd;
+}
+
+#expand_nav div{
+    position: fixed;
+    top: 50%;
+    font-size: 3em;
+}
+
+.mainWindow {
+    width: 85.5%;
+    margin-left: 14.5%;
+    margin-bottom: 1.5em;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 4em;
+}
+
+#terms_pic_div {
+    height: 100%;
+    width: 100%;
+}
+
+#terms_pic {
+    max-height: 85%;
+    max-width: 100%;
+}
+
+.page_top_msg {
+    margin-left: 10%;
+}
+
+.mainWindow h2 {
+    margin-left: 1em;
+}
+
+a {
+    color: blue;
+}
+
+.full_rpt_link {
+    padding-top: .5em;
+    padding-left: 1em;
+    font-size: 1.3em;
+}
+
+input {
+    padding: .6em 1em;
+    margin: .4em 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Full-width inputs */
+input[type=email], input[type=password], input[type=text] {
+    width: 100%;
+}
+
+button {
+    background-color: #0F6803;
+    color: white;
+    padding: .6em 1em;
+    margin: .4em 0;
+    border: none;
+    cursor: pointer;
+}
+
+table th button {
+    background-color: #75b3ff;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.login_button {
+    width: 100%;
+}
+
+.login_form {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.login-container a {
+    float: right;
+    margin-right:10px;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Add padding to containers */
+.login-container {
+    padding: 16px;
+}
+
+.course_select {
+    width: 30em;
+    overflow: hidden;
+    background: white;
+    box-sizing: border-box;
+}
+
+#define_form {
+    margin-left: 20%;
+    margin-top: 5%;
+    width: 60%;
+}
+#define_form table{
+    width: 100%;
+}
+#define_form tr{
+    width: 100%;
+}
+.define-label {
+    width: 30%;
+}
+.define-input {
+    width: 70%;
+}
+#define_form textarea {
+    width: 100%;
+    padding: 0;
+    border-color: gray;
+}
+#define_form input {
+    width: 100%;
+    border-color: gray;
+}
+.define-msg {
+    margin-left: 20%;
+    width: 60%;
+    color: red;
+}
+#define_form button {
+    width: 100%;
+}
+
+#create_course_form {
+    margin-left: 20%;
+    margin-top: 5%;
+    width: 60%;
+}
+#create_course_form table{
+    width: 100%;
+}
+#create_course_form tr{
+    width: 100%;
+}
+#create_course_form button {
+    width: 100%;
+}
+.create_course_label {
+    width: 25%;
+}
+.create_course_input {
+    width: 75%;
+}
+#create_course_form textarea {
+    width: 100%;
+    padding: 0;
+    border-color: gray;
+}
+#create_course_form input {
+    width: 100%;
+    border-color: gray;
+}
+
+#create_assignment_form {
+    margin-left: 20%;
+    margin-top: 5%;
+    width: 60%;
+}
+#create_assignment_form table{
+    width: 100%;
+}
+#create_assignment_form tr{
+    width: 100%;
+}
+#create_assignment_form button {
+    width: 100%;
+}
+.create_assignment_label {
+    width: 30%;
+}
+.create_assignment_input {
+    width: 70%;
+}
+#create_assignment_form input {
+    width: 100%;
+    border-color: gray;
+}
+#create_assignment_form select {
+    overflow: hidden;
+    background: white;
+    box-sizing: border-box;
+}
+
+/*####################################################################################################*/
+.term_def {
+    width: 100%;
+    min-height: 3em;
+}
+
+.term_def_table {
+    margin: 0;
+    padding: 1em;
+    width: 100%;
+    display: table;
+}
+
+.term_td {
+    width: 20%;
+    text-align: center;
+    background-color: #deffdb;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border: solid 1px;
+}
+
+.def_td {
+    width: 80%;
+    text-align: left;
+    background-color: #fcffed;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border: solid 1px;
+}
+
+.term_def_table th {
+    text-align: center;
+    background-color: #d6e9ff;
+    border: solid 1px;
+    height: 2em;
+}
+
+.term_def_table th:hover {
+    cursor: pointer;
+}
+
+.term_th {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    width: 20%;
+}
+
+.def_th {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    width: 80%;
+}
+
+.term_def_table .td_div {
+    height: 100%;
+    min-height: 2em;
+}
+.term_def_table .term_td p {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: .4em;
+    margin-bottom: .4em;
+}
+.term_def_table .def_td p {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: .8em;
+    margin-bottom: .8em;
+}
+.term_def_table .td_div a {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: .4em;
+    margin-bottom: .4em;
+}
+
+.smaller_text {
+    font-size: .8em;
+}
+
+/*####################################################################################################*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.join_course_tr {
+    width: 100%;
+    min-height: 3em;
+}
+
+.join_course_table {
+    margin: 0;
+    padding: 1em;
+    width: 100%;
+    display: table;
+}
+
+.join_course_td {
+    width: 10%;
+    text-align: center;
+    background-color: #D6E3E0;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border: solid 1px;
+}
+
+.join_course_table .course_name_td {
+    width: 20%;
+    text-align: center;
+    background-color: #deffdb;
+    border: solid 1px;
+}
+
+.join_course_table .course_desc_td {
+    width: 40%;
+    text-align: center;
+    background-color: #fcffed;
+    border: solid 1px;
+}
+
+.join_course_table .prof_td {
+    width: 20%;
+    text-align: center;
+    background-color: #fcffed;
+    border: solid 1px;
+}
+
+.join_course_table .course_created_td {
+    width: 10%;
+    text-align: center;
+    background-color: #fcffed;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border: solid 1px;
+}
+
+.join_course_th {
+    width: 10%;
+    text-align: center;
+    background-color: #75b3ff;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border: solid 1px;
+}
+
+.join_course_table .course_name_th {
+    width: 20%;
+    text-align: center;
+    background-color: #d6e9ff;
+    border: solid 1px;
+}
+
+.join_course_table .course_desc_th {
+    width: 40%;
+    text-align: center;
+    background-color: #d6e9ff;
+    border: solid 1px;
+}
+
+.join_course_table .prof_th {
+    width: 20%;
+    text-align: center;
+    background-color: #d6e9ff;
+    border: solid 1px;
+}
+
+.join_course_table .course_created_th {
+    width: 10%;
+    text-align: center;
+    background-color: #d6e9ff;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: solid 1px;
+}
+
+.join_course_table th:hover {
+    cursor: pointer;
+}
+
+.join_course_table .td_div {
+    height: 100%;
+    min-height: 2em;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+.my_course_tr {
+    width: 100%;
+    min-height: 3em;
+}
+
+.my_course_table {
+    margin: 0;
+    padding: 1em;
+    width: 100%;
+    display: table;
+}
+
+.my_course_table th:hover {
+    cursor: pointer;
+}
+
+.my_course_table .course_name_th {
+    width: 18%;
+    text-align: center;
+    background-color: #d6e9ff;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border: solid 1px;
+}
+
+.my_course_table .course_desc_th {
+    width: 40%;
+    text-align: center;
+    background-color: #d6e9ff;
+    border: solid 1px;
+}
+
+.my_course_table .course_joined_th {
+    width: 12%;
+    text-align: center;
+    background-color: #d6e9ff;
+    border: solid 1px;
+}
+
+.my_course_table .course_created_th {
+    width: 12%;
+    text-align: center;
+    background-color: #d6e9ff;
+    border: solid 1px;
+}
+
+.my_course_table .prof_th {
+    width: 18%;
+    text-align: center;
+    background-color: #d6e9ff;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: solid 1px;
+}
+
+.my_course_table .course_name_td {
+    width: 18%;
+    text-align: center;
+    background-color: #deffdb;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border: solid 1px;
+}
+
+.my_course_table .course_desc_td {
+    width: 40%;
+    text-align: center;
+    background-color: #fcffed;
+    border: solid 1px;
+}
+
+.my_course_table .course_joined_td {
+    width: 12%;
+    text-align: center;
+    background-color: #fcffed;
+    border: solid 1px;
+}
+
+.my_course_table .course_created_td {
+    width: 12%;
+    text-align: center;
+    background-color: #fcffed;
+    border: solid 1px;
+}
+
+.my_course_table .prof_td {
+    width: 18%;
+    text-align: center;
+    background-color: #fcffed;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border: solid 1px;
+}
+
+.my_course_table .td_div {
+    height: 100%;
+    min-height: 2em;
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*####################################################################################################*/
+.verify_tr {
+    width: 100%;
+    min-height: 3em;
+}
+
+.verify_table {
+    margin: 0;
+    padding: 1em;
+    width: 100%;
+    display: table;
+}
+
+.verify_table th:hover {
+    cursor: pointer;
+}
+
+.verify_table .verify_th {
+    width: 10%;
+    text-align: center;
+    background-color: #75b3ff;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border: solid 1px;
+}
+
+.verify_table .verify_term_th {
+    width: 15%;
+    text-align: center;
+    background-color: #d6e9ff;
+    border: solid 1px;
+}
+
+.verify_table .verify_def_th {
+    width: 35%;
+    text-align: center;
+    background-color: #d6e9ff;
+    border: solid 1px;
+}
+
+.verify_table .verify_course_th {
+    width: 15%;
+    text-align: center;
+    background-color: #d6e9ff;
+    border: solid 1px;
+}
+
+.verify_table .verify_info_th {
+    width: 25%;
+    text-align: center;
+    background-color: #d6e9ff;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: solid 1px;
+}
+
+.verify_table .verify_td {
+    width: 10%;
+    text-align: center;
+    background-color: #D6E3E0;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border: solid 1px;
+}
+
+.verify_table .verify_term_td {
+    width: 15%;
+    text-align: center;
+    background-color: #deffdb;
+    border: solid 1px;
+}
+
+.verify_table .verify_def_td {
+    width: 35%;
+    text-align: center;
+    background-color: #fcffed;
+    border: solid 1px;
+}
+
+.verify_table .verify_course_td {
+    width: 15%;
+    text-align: center;
+    background-color: #fcffed;
+    border: solid 1px;
+}
+
+.verify_table .verify_info_td {
+    width: 25%;
+    text-align: center;
+    background-color: #fcffed;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border: solid 1px;
+}
+
+.verify_table .td_div {
+    height: 100%;
+    min-height: 2em;
+}
+/*####################################################################################################*/
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.verify_cm_tr {
+    width: 100%;
+    min-height: 3em;
+}
+
+.verify_cm_table {
+    margin: 0;
+    padding: 1em;
+    width: 100%;
+    display: table;
+}
+
+.verify_cm_table th:hover {
+    cursor: pointer;
+}
+
+.verify_cm_table .verify_cm_th {
+    width: 15%;
+    text-align: center;
+    background-color: #75b3ff;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border: solid 1px;
+}
+
+.verify_cm_table .verify_cm_email_th {
+    width: 30%;
+    text-align: center;
+    background-color: #d6e9ff;
+    border: solid 1px;
+}
+
+.verify_cm_table .verify_cm_msg_th {
+    width: 25%;
+    text-align: center;
+    background-color: #d6e9ff;
+    border: solid 1px;
+}
+
+.verify_cm_table .verify_cm_course_th {
+    width: 30%;
+    text-align: center;
+    background-color: #d6e9ff;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: solid 1px;
+}
+
+.verify_cm_table .verify_cm_td {
+    width: 15%;
+    text-align: center;
+    background-color: #D6E3E0;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border: solid 1px;
+}
+
+.verify_cm_table .verify_cm_email_td {
+    width: 30%;
+    text-align: center;
+    background-color: #deffdb;
+    border: solid 1px;
+}
+
+.verify_cm_table .verify_cm_msg_td {
+    width: 25%;
+    text-align: center;
+    background-color: #fcffed;
+    border: solid 1px;
+}
+
+.verify_cm_table .verify_cm_course_td {
+    width: 30%;
+    text-align: center;
+    background-color: #fcffed;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border: solid 1px;
+}
+
+.verify_cm_table .td_div {
+    height: 100%;
+    min-height: 2em;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+.report {
+    width: 98%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 2%;
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 1em;
+    padding-left: 0;
+    padding-right: 0;
+    overflow-x: hidden;
+}
+
+.report a {
+    color: blue;
+}
+
+.report-spacer {
+    width: 10%;
+    margin: 0;
+    padding: 0;
+}
+
+.report-course-div {
+    width: 95%;
+    height: 1.5em;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 0;
+    margin-top: .5em;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    background: #c3ff9e;
+}
+.report-course-table {
+    width: 90%;
+    margin: 0;
+    padding: 0;
+}
+.report-course-tr {
+    width: 100%;
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+}
+.report-course-td {
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+}
+.report-assign-div {
+    width: 100%;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    margin: 0;
+    padding: 0;
+    background: #9effd0;
+}
+.report-assign-table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+.report-assign-tr {
+    width: 100%;
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+}
+.report-assign-table th {
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+.report-assign-table .student {
+    width: 35%;
+}
+.report-assign-table .on-time {
+    width: 10%;
+}
+.report-assign-table .late {
+    width: 10%;
+}
+.report-assign-table .unverif {
+    width: 10%;
+}
+.report-assign-table .required {
+    padding-left: .5em;
+    width: 10%;
+}
+.report-assign-table .left {
+    width: 10%;
+}
+.report-assign-table .future {
+    width: 15%;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+.assign_tr {
+    width: 100%;
+    min-height: 2em;
+}
+
+.assign_tbl {
+    margin: 0;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0;
+    width: 100%;
+    display: table;
+}
+
+.assign_tbl .assign_expand_th {
+    width: 10%;
+    text-align: center;
+    background-color: #d6e9ff;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border: solid 1px;
+}
+
+.assign_tbl .assign_expand_th:hover {
+    cursor: pointer;
+}
+.assign_tbl .assign_expand:hover {
+    cursor: pointer;
+}
+
+.assign_tbl .assign_desc_th {
+    width: 38%;
+    text-align: center;
+    background-color: #d6e9ff;
+    border: solid 1px;
+}
+
+.assign_tbl .assign_due_th {
+    width: 20%;
+    text-align: center;
+    background-color: #d6e9ff;
+    border: solid 1px;
+}
+
+.assign_tbl .assign_amt_th {
+    width: 8%;
+    text-align: center;
+    background-color: #d6e9ff;
+    border: solid 1px;
+}
+
+.assign_tbl .assign_amt_last_th {
+    width: 8%;
+    text-align: center;
+    background-color: #d6e9ff;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: solid 1px;
+}
+
+.assign_tbl .assign_expand {
+    width: 10%;
+    text-align: center;
+    background-color: #D6E3E0;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border: solid 1px;
+}
+
+.assign_tbl .assign_desc {
+    width: 38%;
+    text-align: center;
+    background-color: #deffdb;
+    border: solid 1px;
+}
+
+.assign_tbl .assign_due {
+    width: 20%;
+    text-align: center;
+    background-color: #fcffed;
+    border: solid 1px;
+}
+
+.assign_tbl .assign_amt {
+    width: 8%;
+    text-align: center;
+    background-color: #fcffed;
+    border: solid 1px;
+}
+
+.assign_tbl .assign_amt_last {
+    width: 8%;
+    text-align: center;
+    background-color: #fcffed;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border: solid 1px;
+}
+
+.assign_tbl .td_div {
+    height: 100%;
+    min-height: 2em;
+}
+
+
+
+.def_tr {
+    width: 100%;
+    min-height: 2em;
+}
+
+.def_tbl {
+    margin: 0;
+    padding-top: 1em;
+    padding-left: 5em;
+    padding-right: 1em;
+    padding-bottom: 0;
+    width: 100%;
+    display: none;
+}
+
+.def_tbl th:hover {
+    cursor: pointer;
+}
+
+.def_tbl .def_term_th {
+    width: 20%;
+    text-align: center;
+    background-color: #d6e9ff;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border: solid 1px;
+}
+
+.def_tbl .def_def_th {
+    width: 50%;
+    text-align: center;
+    background-color: #d6e9ff;
+    border: solid 1px;
+}
+
+.def_tbl .def_verif_th {
+    width: 15%;
+    text-align: center;
+    background-color: #d6e9ff;
+    border: solid 1px;
+}
+
+.def_tbl .def_late_th {
+    width: 15%;
+    text-align: center;
+    background-color: #d6e9ff;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: solid 1px;
+}
+
+.def_tbl .def_term {
+    width: 20%;
+    text-align: center;
+    background-color: #deffdb;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border: solid 1px;
+}
+
+.def_tbl .def_def {
+    width: 50%;
+    text-align: center;
+    background-color: #fcffed;
+    border: solid 1px;
+}
+
+.def_tbl .def_verif {
+    width: 15%;
+    text-align: center;
+    background-color: #fcffed;
+    border: solid 1px;
+}
+
+.def_tbl .def_late {
+    width: 15%;
+    text-align: center;
+    background-color: #fcffed;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border: solid 1px;
+}
+
+.def_tbl .td_div {
+    height: 100%;
+    min-height: 2em;
+}
+
+
+
+
+
+
+
+
+.ta_tr {
+    width: 100%;
+    min-height: 3em;
+}
+
+.ta_table {
+    margin: 0;
+    padding: 1em;
+    width: 100%;
+    display: table;
+}
+
+.ta_td {
+    width: 10%;
+    text-align: center;
+    background-color: #D6E3E0;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border: solid 1px;
+}
+
+.ta_table .ta_course_td {
+    width: 40%;
+    text-align: center;
+    background-color: #deffdb;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border: solid 1px;
+}
+
+.ta_table .ta1_td {
+    width: 20%;
+    text-align: center;
+    background-color: #fcffed;
+    border: solid 1px;
+}
+
+.ta_table .ta2_td {
+    width: 20%;
+    text-align: center;
+    background-color: #fcffed;
+    border: solid 1px;
+}
+
+.ta_table .ta3_td {
+    width: 20%;
+    text-align: center;
+    background-color: #fcffed;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border: solid 1px;
+}
+
+.ta_th {
+    width: 10%;
+    text-align: center;
+    background-color: #75b3ff;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border: solid 1px;
+}
+
+.ta_table .ta_course_th {
+    width: 40%;
+    text-align: center;
+    background-color: #75b3ff;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border: solid 1px;
+}
+
+.ta_table .ta1_th {
+    width: 20%;
+    text-align: center;
+    background-color: #d6e9ff;
+    border: solid 1px;
+}
+
+.ta_table .ta2_th {
+    width: 20%;
+    text-align: center;
+    background-color: #d6e9ff;
+    border: solid 1px;
+}
+
+.ta_table .ta3_th {
+    width: 20%;
+    text-align: center;
+    background-color: #d6e9ff;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: solid 1px;
+}
+
+.ta_table .td_div {
+    height: 100%;
+    min-height: 2em;
+}

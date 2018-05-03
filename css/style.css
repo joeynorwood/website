@@ -1,0 +1,142 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: block;
+    height: 100%;
+}
+#full-window {
+    overflow: hidden;
+    overflow-y: auto; 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    background: #e8e8e8;
+    height: 100%;
+}
+
+#center-column {
+    overflow: hidden;
+    overflow-y: auto; 
+    width: 60%;
+    max-width: 1000px;
+    min-width: 600px;
+    margin: auto;
+    margin-top: 15px;
+    display: block;
+    border: 1px solid gray;
+    background: #d5e5ed;
+    padding: 5px;
+    min-height: 80%;
+}
+
+#hdr {
+    width: 99%;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 0;
+    text-align: center;
+}
+
+#hdr img {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: 1px solid gray;
+}
+
+#side-nav {
+    overflow: hidden;
+    overflow-y: auto; 
+    float: left;
+    width: 22%;
+    height: 100%;
+    padding: 0;
+    padding-top: 0;
+    padding-bottom: 24px;
+}
+
+#side-nav ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#side-nav li {
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+    color: black;
+    border-top: 1px solid gray;
+    padding-right: 0;
+}
+
+#side-nav li:hover {
+    background: #1c7513;
+    color: white;
+}
+
+#side-nav a {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+#side-nav-last-li {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid gray;
+}
+
+#content {
+    overflow: hidden;
+    overflow-y: auto; 
+    float: right;
+    width: 73%;
+    height: 100%;
+    padding: 12px;
+    border: 1px solid gray;
+    background: #f4f4f4;
+}
+
+#content a {
+    color: blue;
+}
+
+@media only screen and (max-width: 800px) {
+    #full-window {
+        background: #d5e5ed;
+    }
+    
+    #center-column {
+        width: 95%;
+        max-width: 95%;
+        min-width: 95%;
+        margin-top: 0;
+        font-size: .75em;
+        border: 0;
+    }
+    
+    #side-nav {
+        width: 20%;
+        max-width: 20%;
+        min-width: 20%;
+        
+    }
+    
+    #content {
+        width: 70%;
+        max-width: 70%;
+        min-width: 70%;
+    }
+}
