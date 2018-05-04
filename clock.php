@@ -64,9 +64,11 @@ echo $htmlGen->createPageBeforeContent('Clock');
             drawer.drawLineFromAngle(.5, .5, hourAngle, .15, 6, 'black', true);
             drawer.drawLineFromAngle(.5, .5, minuteAngle, .34, 4, 'black', true);
             drawer.drawLineFromAngle(.5, .5, secondAngle, .355, 2, 'red', true);
+            
+            window.requestAnimationFrame(makeClock);
         }
         
-        window.setInterval(makeClock, 200);
+        window.requestAnimationFrame(makeClock);
     }
     
     
