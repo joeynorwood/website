@@ -14,7 +14,7 @@ if($msg == '' || strlen($msg) < 10){
     throw new Exception('NO NONSENSE!!!!!');
 }
 else {
-    $wdba->insertMessage($msg);
+    $mdba->insertMessage($msg);
 }
 
 
