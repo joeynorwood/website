@@ -15,7 +15,7 @@ of software products.</p>
         <p><b>Bachelor of Science, Computer Science</b> - May 2016</p>
         <p>Michigan State University. East Lansing, MI</p>
         <ul>
-            <li>GPA: 3.7/4.0</li>
+            <li>GPA: 3.6/4.0</li>
             <li>Classroom experience with C++, Python, Javascript, PHP</li>
         </ul>
     <h3>Experience</h3>
