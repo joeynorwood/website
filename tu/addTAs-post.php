@@ -43,27 +43,5 @@ if($loggedIn && $isProf && count($_POST) > 1 && count($_POST)%3 == 0){
 }
 
 header("Location: ./addTAs.php");
- 
-/*
-    if($_POST['course_name'] != '' && $_POST['course_description'] != ''){
-        
-        if($dba->createCourse($_POST['course_name'], $_POST['course_description'], $id)){
-            $success = '1';
-        }else{
-            $success = '0';
-        }
-    }
-    else{
-        $success = '-1';
-    }
-}
-if(is_null($success)){
-    header("Location: ./index.php");
-    exit;
-}
-else{
-    header("Location: ./addTAs.php");
-    exit;
-}
-*/
+exit;
 ?>

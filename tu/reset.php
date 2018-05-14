@@ -30,7 +30,7 @@ echo $htmlGen->createNavigation($isProf, $isTA);
 ?>
 
 <div class='mainWindow' id='mainWindow'>
-    <form class="login_form" action="./reset-post.php?e=<?php echo $_REQUEST['e']; ?>" method="post">
+    <form class="login_form" action="./reset-post.php?v=<?php echo $_REQUEST['v']; ?>&e=<?php echo $_REQUEST['e']; ?>" method="post">
         <div class="login-container">
             <p>Email: <?php echo $_REQUEST['e']; ?></p>
 

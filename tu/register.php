@@ -22,7 +22,7 @@ echo $htmlGen->createNavigation($isProf, $isTA);
 ?>
 
 <div class='mainWindow' id='mainWindow'>
-    <form class="login_form" action="/register-post.php" method="post">
+    <form class="login_form" action="./register-post.php" method="post">
         <div class="login-container">
             <label>Email</label>
             <input type="email" placeholder="Enter Email" name="email" required>

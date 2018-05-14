@@ -844,7 +844,7 @@ class DatabaseAccessor {
             WHERE u.email = ?
         ");
         
-        $stmt->execute(array($email));
+        $stmt->execute(array($this->sanitize($email)));
         $result = $stmt->fetchAll();
         
         if(count($result) == 0){
@@ -907,6 +907,22 @@ class DatabaseAccessor {
             $stmt4->execute(array($taID));
         }
         $stmt->execute(array($taID, $courseID));
+        
+        $stmt5 = $this->pdo->prepare("
+            UPDATE users
+            SET is_ta = 0
+            WHERE id NOT IN (
+                SELECT ta_1_id FROM course WHERE ta_1_id IS NOT NULL
+                UNION
+                SELECT ta_2_id FROM course WHERE ta_2_id IS NOT NULL
+                UNION
+                SELECT ta_3_id FROM course WHERE ta_3_id IS NOT NULL
+                UNION
+                SELECT professor_id FROM course WHERE professor_id IS NOT NULL
+            );
+        ");
+            
+        $stmt5->execute(array());
     }
     
     function isOkToEmailPasswordReset($email){

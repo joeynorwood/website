@@ -67,22 +67,4 @@ else{
 header("Location: ./msg.php?m=6");
 exit;
 
-/*
-//make sure that both submitted passwords are the same
-if($_POST['pw'] == $_POST['repw']){
-    //check that email is correct form
-    if(true){
-        //send mail
-    }
-    else{
-        //not msu email message
-        header("Location: ./msg.php?m=3");
-        exit;
-    }
-}
-else {
-    header("Location: ./msg.php?m=2");
-    exit;
-}
-*/
 ?>
