@@ -28,7 +28,7 @@ class htmlGenerator{
                             <a href='./resume.php'><li>Resume</li></a>
                             <a href='./termsUnknown.php'><li>Terms Unknown</li></a>
                             <a href='./messages.php'><li>Messages</li></a>
-                            <a href='./clock.php'><li>Clock</li></a>
+                            <a href='./draw.php'><li>Canvas Experiments</li></a>
                             <a href='./theories.php'><li>Theories</li></a>
                             <div id='side-nav-last-li'></div>
                         </ul>

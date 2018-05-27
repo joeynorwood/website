@@ -37,13 +37,13 @@ class Drawer {
         if(x < 1 && x > 0 && y < 1 && y > 0){
             y = this.correctY(y);
             var ctx = this.canvas.getContext('2d');
+            ctx.beginPath();
+            ctx.arc(x * this.width, y * this.height, radius * this.rScale, 0, Math.PI * 2, false);
             ctx.lineWidth = thickness;
             ctx.strokeStyle = color;
             ctx.fillStyle = fillColor;
-            ctx.beginPath();
-            ctx.arc(x * this.width, y * this.height, radius * this.rScale, 0, Math.PI * 2, true);
-            ctx.stroke();
             ctx.fill();
+            ctx.stroke();
         }
     }
     

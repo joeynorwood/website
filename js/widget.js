@@ -1,10 +1,11 @@
 class Widget {
     
-    constructor(height, width, startButton, pageBody) {
+    constructor(height, width, startButton, pageBody, id='') {
         this.pageBody = pageBody;
         this.startButton = startButton;
         this.height = height;
         this.width = width;
+        this.id = '-' + id;
         
         var screenWidth = (pageBody.getBoundingClientRect().width == 0) ? width : pageBody.getBoundingClientRect().width;
         var screenHeight = (pageBody.getBoundingClientRect().height == 0) ? height : pageBody.getBoundingClientRect().height;
@@ -23,19 +24,32 @@ class Widget {
         this.pageBody.appendChild(this.widgetArea);
         
         //these 2 methods will select elements by ID because they are click responses
-        this.startButton.onclick = this.showWidget;
-        this.grayArea.onclick = this.hideWidget;
+        //this.startButton.onclick = this.showWidget;
+        //this.grayArea.onclick = this.hideWidget;
+        
+        var postfix = this.id;
+        
+        this.startButton.addEventListener('click', function(){
+            document.getElementById('gray-area' + postfix).style.visibility = 'visible';
+            document.getElementById('widget-area' + postfix).style.visibility = 'visible';
+        });
+        
+        this.grayArea.addEventListener('click', function(){
+            document.getElementById('gray-area' + postfix).style.visibility = 'hidden';
+            document.getElementById('widget-area' + postfix).style.visibility = 'hidden';
+        });
     }
     
-    //these 2 methods will select elements by ID because they are click responses
+    /*these 2 methods will select elements by ID because they are click responses
     showWidget() {
-            document.getElementById('gray-area').style.visibility = 'visible';
-            document.getElementById('widget-area').style.visibility = 'visible';
+        document.getElementById('gray-area').style.visibility = 'visible';
+        document.getElementById('widget-area').style.visibility = 'visible';
     }
     hideWidget() {
-            document.getElementById('gray-area').style.visibility = 'hidden';
-            document.getElementById('widget-area').style.visibility = 'hidden';
+        document.getElementById('gray-area').style.visibility = 'hidden';
+        document.getElementById('widget-area').style.visibility = 'hidden';
     }
+    */
 
     createGrayArea() {
         var grayArea = document.createElement('DIV');
@@ -47,7 +61,7 @@ class Widget {
         grayArea.style.background = 'gray';
         grayArea.style.opacity = '0.5';
         
-        grayArea.id = 'gray-area';
+        grayArea.id = 'gray-area' + this.id;
         grayArea.style.visibility = 'hidden';
         return grayArea;
     }
@@ -66,7 +80,7 @@ class Widget {
         widgetArea.style.marginLeft = (0 - (this.width / 2.0)).toString() + 'px';
         widgetArea.style.background = 'white';
         
-        widgetArea.id = 'widget-area';
+        widgetArea.id = 'widget-area' + this.id;
         widgetArea.style.visibility = 'hidden';
         return widgetArea;
     }
