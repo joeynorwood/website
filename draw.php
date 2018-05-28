@@ -91,8 +91,8 @@ echo $htmlGen->createPageBeforeContent('Canvas Experiments');
                           fill : ''
                          };
             
-            var blueInt = parseInt('0000ff', 16);
-            var redInt = parseInt('ff0000', 16);
+            var colorIntMin = parseInt('000033', 16);
+            var colorIntMax = parseInt('0000ff', 16);
             
             var speed = Math.sqrt((circles[i].dx*circles[i].dx) + (circles[i].dy*circles[i].dy));
             var maxSpeed = Math.sqrt((dMax*dMax) + (dMax*dMax));
@@ -100,10 +100,19 @@ echo $htmlGen->createPageBeforeContent('Canvas Experiments');
             
             var speedPercent = (speed - minSpeed) / (maxSpeed - minSpeed);
             
-            var colorNum = Math.floor(((redInt - blueInt) * speedPercent) + blueInt);
             
-            //circles[i].fill = '#' + colorNum.toString(16);
-            circles[i].fill = '#' + colorNum.toString(16).substring(0, 2) + '00' + colorNum.toString(16).substring(4, 6);
+            var colorNum = 0;
+            
+            if(speedPercent < .5) {
+                speedPercent = speedPercent * 2;
+                colorNum = Math.floor(((colorIntMax - colorIntMin) * speedPercent) + colorIntMin);
+                circles[i].fill = '#' + colorNum.toString(16) + '00FF';
+            }
+            else{
+                speedPercent = (1 - speedPercent) * 2;
+                colorNum = Math.floor(((colorIntMax - colorIntMin) * speedPercent) + colorIntMin);
+                circles[i].fill = '#FF00' + colorNum.toString(16);
+            }
         }
         
         function swarm() {
